@@ -1,15 +1,14 @@
+@import url(style/header.css);
+
+
 :root{
-	--cor-de-fundo : #EBECEE;
-	--branco : #ffffff;
+ --cor-de-fundo: #EBECEE;
+  --branco: #ffffff;
 }
+
 
 body{
-	background-color: var(--cor-de-fundo);
+ background-color: var(--cor-de-fundo);
 }
 
-.cabeçalho {
-	background-color: var(--branco);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
+
