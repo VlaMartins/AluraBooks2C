@@ -16,3 +16,56 @@
 }
 
 
+/*02/08/2023*/
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.opções {
+    display: none;
+}
+
+
+.container__texto {
+    display: none;
+}
+
+.container__botao{
+    display: none;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+}
+
+.lista-menu__link{
+    color: darkblue;
+    font-size: 18px;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 50vw;
+}
