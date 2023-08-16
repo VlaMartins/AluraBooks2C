@@ -1,2 +1,2 @@
-# AluraBooks2C
-Site desenvolvido pela 2ª Série C
+# AluraBooksRhuan2A
+Site desenvolvido com a professora Vla
