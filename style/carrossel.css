@@ -22,7 +22,9 @@
     margin: .5em 0;
 }
 
-/* card*/
+/*card*/
+
+
 /*CARD*/
 .card__descricao {
     display: flex;
@@ -43,7 +45,7 @@
     margin: 0 0.5em;
     }
 
-    .botoes__ancora {
+.botoes__ancora {
         background-color: var(--laranja);
         padding: 1em 2.2em;
         color: var(--branco);
@@ -60,20 +62,85 @@
     }
 
 .descricao__titulo {
-        color: rgb(171, 112, 2);
+        color: orange;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
  }
 
 .descricao__titulo-livro {
-        color: rgb(3, 33, 43);
-        font-size: 18px;
+        color: rgb(11, 11, 105) ;
+        font-size: 17px;
         font-weight: 700;
         margin: 0.5em 0;
 }
 
 .descricao__texto {
-    font-size: 14px;
-    color: var(--preto);
+       font-size: 14px;
+        color: black;
 }
 
+
+/*RESPONSIVIDADE CARROSSEL - TABLET*/
+
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+
+
+/*RESPONSIVIDADE CARROSSEL - TELAS GRANDES*/
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .descrição__titulo {
+        font-size: 32px;
+    }
+
+    .descrição__texto {
+        font-size: 16px;
+    }
+
+    .descrição {
+        margin-right: 2em;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3em;
+    }
+
+}
