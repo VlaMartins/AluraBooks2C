@@ -2,23 +2,20 @@
 @import url(style/banner.css);
 @import url(style/carrossel.css);
 
+
 :root{
-    --cor-de-fundo:#ebecee;/*colocar todas as cores na aula 2*/
-    --branco: #ffffff; 
+    --cor-de-fundo: #EBECEE;
+    --branco: #ffffff;
     --laranja: #EB9B00;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --azul: #0572c6;
+    --azul: #002F52;
     --preto: #000000;
     --cinza: #474646;
     --cinza-claro: #858585;
-    --fonte-principal:"Poppins";
-    --fonte-secundario: 'Berkshire Swash', cursive;
 
 }
 
 body{
     background-color: var(--cor-de-fundo);
-    font-size: 16px; /*aula 2 font*/
-    font-weight: 400;
-    font-family: var(--fonte-principal);
 }
+

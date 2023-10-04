@@ -1,0 +1,85 @@
+﻿.cabeçalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block; /*confere*/
+}
+
+.cabeçalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /*colocar*/ /*confere*/
+}
+
+.container{
+    display: flex;
+    align-items: center; /*confere*/
+}
+
+.container__imagem{
+    padding: 1em;/*confere*/
+}
+
+
+
+/*botao 05/07*/
+.container__botao {
+    display: none;
+}
+
+.container__titulo {
+    display: none;
+}
+
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+
+/*05/07*/
+.lista-menu{
+    display: none;
+    /*aula 2 - colocar:A propriedade “top:100%” só funciona devido aos positions inseridos.*/ 
+    top: 100%;
+    position: absolute;
+    width: 60vw;
+  }
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__link{
+     background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
+/*hamburguer*/
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {/*esconde e mostra o menu*/
+    background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade); 
+    /*cor de fundo do botao do hamburguer*/
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
